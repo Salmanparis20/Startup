@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+.navbar-nav  li{ 
+    padding: 10px 20px;
+}
+.container-fluid .d-lg-flex i{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+}
+.container-fluid .d-lg-flex i:hover{
+    background-color: white;
+    color: black;
+}
+/* ====navContainer2==== */
+
+.navContainer2 .container-fluid{
+    height: 15vh;
+}
+.container-fluid .nav-title h1{
+    font-family: "Nunito",sans-serif !important;
+    font-size: calc(1.380rem + 1.5vw) !important;
+    color: #ffff;
+}
+.navContainer2 .nav-item a{
+    font-size: 18px !important;
+    font-family: "Nunito",sans-serif !important;
+    color: #ffff;
+}
+.nav-item .dropdown-menu a{
+    color: black;
+}
+.navContainer2 .nav-item a:hover{
+    color: #2bb1e0;
+}
+
+.btnnav{
+    font-size: 18px !important;
+    font-family: "Nunito",sans-serif !important;
+    background-color:#06A3DA !important;
+    /* border-color: #1facde !important; */
+    color: #fff;
+    margin-top: 10px !important;
+   width: 100%;
+   border-radius: 0px !important;
+     padding:0 20px;
+     border: none;
+
+}
+@media(max-width:576px){
+    .btnnav{
+        width: 50%;
+    }
+    .nav-item i{
+        color: #2bb1e0;
+    }
+    .nav-item{
+        z-index: 2;
+        position: relative;
+    }
+    .navContainer2 .container-fluid{
+        height: 10vh !important;
+    }
+}
+.btnnav:hover{
+    background-color:#fff !important;
+    color: #091E3E;
+  
+}
+.carousel-item{
+    position: relative;
+    width: 100%;
+}
+.heroContainer .carousel-item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(9, 30, 62, .7);
+    z-index: 1;
+} 
+.navContainer2{
+    position: absolute;
+    top:61px;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid #1facde;
+}
+@media(max-width:576px){
+    .navContainer2{
+        position: relative !important;
+        background-color:#fff;
+        top: 0 !important;
+    }
+    .navContainer2 .nav-title{
+        color:#06A3DA !important ;
+
+    }
+    .navContainer2 .nav-title i{
+        color: #06A3DA !important;
+    }
+    .navContainer2 .collapse{
+        position: absolute;
+        top:113px !important;
+        background-color: #fff;
+       min-width:95%;
+        overflow-x: hidden;
+    }
+    .navContainer2 .nav-item a{
+        color: black;
+    }
+    .navContainer2 .navbar-toggler{
+        border: 1px solid #06A3DA !important ;
+        color: #1facde !important;
+    }
+    .carousel-caption{
+        z-index: 2;
+        top:15% !important;
+    }
+    /* .carousel-caption h5{
+        font-size:5px !important;
+    } */
+    .carousel-caption h1{
+        font-size: 20px !important;
+    }
+    .free-button .btn1{
+        /* width: 20px !important; */
+        font-size: 13px !important;
+    }
+    .free-button .btn2{
+        font-size: 13px;
+    }
+   
+
+}
+.carousel-caption{
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+}
+.carousel-caption h5{
+    font-size: 1.25rem !important;
+    font-family: "Nunito",sans-serif !important;
+    
+}
+.carousel-indicators{
+    display: none !important;
+}
+.free-button .btn1{
+    border: 2px solid #1facde;
+    background-color: #1facde;
+    color: #fff;
+    border-radius: 1px;
+}
+.free-button .btn1:hover{
+    background-color: #fff;
+    color: black;
+}
+.free-button .btn2{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 1px;
+}
+.free-button .btn2:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/*====== clientContainer===== */
+
+.happy-client{
+    background-color: #1facde !important;
+}
+.people i{
+    background-color:#ffff;
+    color:#1facde;
+}
+.projects{
+    background-color: #EEF9FF !important;
+}
+.check i{
+    background-color: #1facde;
+    color: #fff;
+}
+.projects h5{
+    color: #1facde;
+}
+.clientContainer .container .row{
+    width: 83%;
+    position: absolute;
+    bottom:0 !important; 
+    top:120%;
+    z-index: 2 !important;
+}
+@media(max-width:576px){
+    .clientContainer{
+        width: 100% !important;
+        padding: 0;
+        margin: 0;
+    }
+    .clientContainer .container .row{
+        padding: 10px 0 10px 20px;
+        width: 100%;
+        margin-top: 20px !important;
+        /* margin-left: 10px !important; */
+        position:relative!important;
+        /* overflow-x: hidden !important; */
+        z-index: 0 !important;
+    }
+    .happy-client{
+        display: flex !important;
+    }
+    .projects{
+        display: flex !important;
+    }
+
+}
+
+/* ===== About Container */
+
+.aboutContainer .container{
+    margin-top: 4rem !important;
+}
+.about-us h5{
+    font-family: 'Nunito', sans-serif;
+    color: #06A3DA;
+}
+.about-us h2{
+    font-family: 'Nunito', sans-serif;
+    color: #091E3E;
+    font-size: 2.5rem !important;
+    font-weight: bolder;
+}
+.about-us p{
+    color: #6a6b75;
+    font-family: 'Rubik', sans-serif;
+}
+.info h6{
+    font-family: 'Nunito', sans-serif;
+    color: #091E3E;
+}
+.info i{
+    color: #06A3DA;
+}
+.row .col-lg-7 .phone{
+    background-color: #1facde;
+}
+.col-lg-6 .btn3{
+    border: 2px solid #1facde;
+    background-color: #1facde;
+    border-radius: 1px;
+}
+.col-lg-6 .btn3:hover{
+    background-color:  #1facde;
+    border: 2px solid #cbd9df ;
+}
+@media(max-width:576px){
+    .row .col-lg-7 .phone{
+        display: flex !important;
+    }
+}
+
+/* ====chooseContainer==== */
+
+.choose h5{
+    font-family: 'Nunito', sans-serif;
+    color: #06A3DA;
+}
+.choose h2{
+    font-family: 'Nunito', sans-serif;
+    color: #091E3E;
+    font-size: 2.5rem !important;
+    font-weight: bolder;
+}
+.icon i{
+    color: #fff;
+    background-color: #06A3DA;
+}
+.features p{
+    color: #6a6b75;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* ====serviceContainer==== */
+
+.service h5{
+    font-family: 'Nunito', sans-serif;
+    color: #06A3DA;
+}
+.service h2{
+    font-family: 'Nunito', sans-serif;
+    color: #091E3E;
+    font-size: 2.5rem !important;
+    font-weight: bolder;
+}
+.service-item .service-icon {
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #06A3DA;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+.service-item {
+    position: relative;
+    height: 300px;
+    padding: 0 30px;
+    background-color: #EEF9FF;
+}
+.rounded {
+    border-radius: 2px !important;
+}
+.service-item p{
+    color: #6a6b75;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* ====priceContainer==== */
+
+.price h5{
+    font-family: 'Nunito', sans-serif;
+    color: #06A3DA;
+}
+.price h2{
+    font-family: 'Nunito', sans-serif;
+    color: #091E3E;
+    font-size: 2.5rem !important;
+    font-weight: bolder;
+}
+.card{
+    border: none !important;
+}
+
+/* ====requestContainer==== */
+
+.request h5{
+    font-family: 'Nunito', sans-serif;
+}
+.request h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem !important;
+    font-weight: bolder;
+}
+.request p{
+    font-family: 'Rubik', sans-serif;
+}
+.request h6{
+    font-family: 'Nunito', sans-serif;
+    color: #091E3E;
+}
+.requestContainer .col-lg-5 input{
+    width: 100% !important;
+}
+
+/* ====testimonialContainer==== */
+
+.testimonial h2{
+    font-size: 2.5rem !important;
+}
+
+/* ====teamContainer=== */
+
+.col-lg-4 .social-icon{
+    position: absolute;
+    top: 70% !important;
+    margin-left: 70px !important;
+    opacity: 0;
+    visibility: hidden;
+}
+.col-lg-4 .social-icon i{
+    color: #ffff !important;
+}
+.col-lg-4 .social-icon i:hover{
+    background-color: #ffff;
+    color: black !important;
+}
+.teamContainer .col-lg-4 .card:hover .social-icon{
+    background-color: #ffff;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+.card:hover{
+    display: flex !important;
+}
+@media(max-width:576px){
+    .col-lg-4 .social-icon{
+        margin-left: 40px !important;
+    }
+    .col-lg-4 .social-icon{
+        /* opacity: 1;
+    visibility: visible; */
+    margin-left: 75px !important;
+    }
+}
+.col-lg-4 .cardBody{
+    padding: 20px 0 20px 0 !important;
+}
+
+/* ====blogContainer==== */
+
+.name i{
+    color: #06A3DA !important;
+}
+.blogContainer .card:hover img{
+    transition: 2s !important;
+    transform: scale(1.1) !important;
+}
+.col-lg-4 .cardHeader{
+    overflow: hidden !important;
+}
+.blogContainer .col-lg-4 .cardBody{
+    padding: 0 20px 20px 20px !important;
+}
